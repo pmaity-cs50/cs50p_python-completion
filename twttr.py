@@ -1,14 +1,19 @@
-def main():
-    text = input("Input: ")
-    print(shorten(text))
 
-def shorten(word):
+def main():
+    # Get user input
+    text = input("Input: ")
+
+    
     vowels = "aeiouAEIOU"
-    new_word = ""
-    for char in word:
+
+
+    new_text = ""
+    for char in text:
         if char not in vowels:
-            new_word += char
-    return new_word
+            new_text += char
+
+
+    print("Output:", new_text)
 
 if __name__ == "__main__":
     main()
